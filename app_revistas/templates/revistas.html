@@ -35,7 +35,7 @@
                 {% for revista in lista_revista: %}
                 <li class="list-group-item">
                     <form action="/revista/{{revista.id}}" method="GET">
-                     <button type="submit" class="btn btn-primary"> {{revista.titulo}}</button> Agregado por {{revista.usuario.nombre}} {{revista.usuario.apellido}}
+                     <button type="submit" class="btn btn-primary"> {{revista.titulo}}</button> Agregado por {{revista.usuario.nombre}} {{revista.usuario.apellido}} <button type="submit" class="btn btn-primary" id="{{}}">Suscribirse</button>
                     </form>
                 </li>    
                   {% endfor %}
